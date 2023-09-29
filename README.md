@@ -1,4 +1,4 @@
-# Web Test Automation with Java (Chrome Focus)
+# Web Test Automation with Java
 
 This README provides a step-by-step guide to initiate web test automation using Java with a primary focus on the Chrome browser. Web test automation is a crucial practice for ensuring the reliability and quality of web applications. This guide is tailored to your specific scenario, where you plan to start with Chrome browser automation.
 
@@ -42,8 +42,7 @@ Before you begin, ensure you have the following prerequisites in place:
 
 - **Version Control**: Use version control (e.g., Git) to manage your test automation code.
 
-- **Continuous Integration (CI)**: Set up CI pipelines to automate test execution on code changes (e.g., Jenkins, Travis CI).
 
 ## Conclusion
 
-This README provides a simplified guide to begin web test automation with Java, focusing primarily on the Chrome browser. Follow these steps to get started with web test automation and enhance your testing process.
+Web test automation in Java with Selenium WebDriver is a fundamental practice for ensuring the reliability and quality of web applications. By following the steps and best practices outlined in this README, you can get started with web test automation and improve your testing process significantly.

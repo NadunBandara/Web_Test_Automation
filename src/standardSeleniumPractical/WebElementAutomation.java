@@ -87,7 +87,7 @@ public class WebElementAutomation {
 				System.out.println("Sample text has been added");
 				
 				//Identify the linktext
-				//driver .findElement(By.linkText("your destination")).click();
+				driver .findElement(By.linkText("your destination")).click();
 				System.out.println("Click the hyper link");
 				
 //				//Identify the table

@@ -31,6 +31,27 @@ public static void main(String[] args) throws InterruptedException {
 		//click the search results the start in Facebook - log in or sign up
 		//driver.findElement(By.linkText("Facebook - log in or sign up")).click();
 		
+		//call the url in the browser
+		driver.get("https://www.facebook.com/");
+				
+		//set expected result and actual result
+		String expected_title = "Facebook – log in or sign up";
+		String actual_title = driver.getTitle();
+		
+		//check whether the correct web page is loaded
+		if (expected_title.equals(actual_title)) {
+			//find the username textbox by id
+			WebElement username = driver.findElement(By.id("email"));
+			username.sendKeys("nadun1");//type "nadun1" on the text box
+			
+			//find the password textbox by id
+			WebElement password = driver.findElement(By.id("password"));
+			password.sendKeys("test123");//Enter this password on password text box
+			
+			//System.out.println("Equal");//print this message on console
+		}else {
+				System.out.println("Not Equal");
+		}
 	}
 
 }

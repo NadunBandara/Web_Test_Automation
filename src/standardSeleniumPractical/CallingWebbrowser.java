@@ -24,12 +24,7 @@ public class CallingWebbrowser {
 		
 		//find web element using xpath
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/form/div[1]/div[1]/div[1]/div/div[2]/textarea")).sendKeys("selenium" + Keys.ENTER);
-		
-		//after 5sec browser closed
-		Thread.sleep(5000);
-		
-		//closed the broswwer
-		//driver.close();		
+				
 	}
 
 }

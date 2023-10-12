@@ -31,6 +31,7 @@ public static void main(String[] args) throws InterruptedException {
 		//click the search results the start in Facebook - log in or sign up
 		//driver.findElement(By.linkText("Facebook - log in or sign up")).click();
 		
+		//first case for the wrong username and password
 		//call the url in the browser
 		driver.get("https://www.facebook.com/");
 				
@@ -62,6 +63,7 @@ public static void main(String[] args) throws InterruptedException {
 			//set 3 second break for the loading
 			Thread.sleep(3000);
 			
+			//second case for the correct username and password
 			//check the whether if the correct url is showing
 			if (expected_url.equals(actual_url)) {
 				System.out.println("Pass the first case");
@@ -98,11 +100,26 @@ public static void main(String[] args) throws InterruptedException {
 					//close the browser
 					driver.close();
 				}
+				else {
+					System.out.println("There is an issue in expected title");
+					//check the urls
+					String expected_url1 = "https://www.facebook.com/";
+					String actual_url1 = driver.getCurrentUrl();
+					
+					if(expected_url1.equals(actual_url1)) {
+						System.out.println("Pass the second case");
+						//close the browser
+						driver.close();
+					}else {
+						System.out.println("There is an issue in expected url");
+
+					}
+					}
 			}else {
-				System.out.println("Pass the second case");
+				System.out.println("Failed the first case");
 			}	
 		}else {
-				System.out.println("Failed the first case");
+				System.out.println("Title is not match");
 		}
 	}
 

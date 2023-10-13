@@ -48,9 +48,15 @@ public static void main(String[] args) throws InterruptedException {
 			WebElement username = driver.findElement(By.id("email"));
 			username.sendKeys("nadun1");//type "nadun1" on the text box
 			
+			//set 1 second break for the loading
+			Thread.sleep(1000);
+			
 			//find the password textbox by id
 			WebElement password = driver.findElement(By.id("pass"));
 			password.sendKeys("test123");//Enter this password on password text box
+			
+			//set 1 second break for the loading
+			Thread.sleep(1000);
 			
 			//find the login button by name
 			WebElement login_button = driver.findElement(By.name("login"));
@@ -78,6 +84,9 @@ public static void main(String[] args) throws InterruptedException {
 				WebElement username1 = driver.findElement(By.id("email"));
 				username1.clear();
 				username1.sendKeys("0712309059");
+				
+				//set 1 second break for the loading
+				Thread.sleep(1000);
 				
 				//again enter the password
 				WebElement password1 = driver.findElement(By.id("pass"));

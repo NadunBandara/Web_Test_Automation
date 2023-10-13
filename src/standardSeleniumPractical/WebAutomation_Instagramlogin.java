@@ -33,6 +33,9 @@ public class WebAutomation_Instagramlogin {
 					WebElement username = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/div/div/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[1]/div/label/input"));
 					username.sendKeys("nadun");
 					
+					//set 1 second break for the loading
+					Thread.sleep(1000);
+					
 					//find the password text box
 					WebElement password = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/div/div/div/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[2]/div/label/input"));
 					password.sendKeys("nadun1");
@@ -68,14 +71,14 @@ public class WebAutomation_Instagramlogin {
 						WebElement username1 = driver.findElement(By.name("username"));
 						username1.sendKeys("_nadun_j");
 						
-						//set 3 second break for the loading
+						//set 1 second break for the loading
 						Thread.sleep(1000);
 						
 						//find the password text box
 						WebElement password1 = driver.findElement(By.name("password"));
 						password1.sendKeys("Nadun@JND@#");
 						
-						//set 3 second break for the loading
+						//set 1 second break for the loading
 						Thread.sleep(1000);
 						
 						//find the loging button

@@ -9,7 +9,8 @@ public class WebAutomation_Instagramlogin {
 
 	public static void main(String[] args) throws InterruptedException {
 				//setting up thirdparty properties in the class file
-				System.setProperty("webdriver.chrome.driver", "D:\\Eclipse-workplace\\SQA_StandardSelenium\\Thirdparty__Resource_FIles\\Chrome Driver\\V117.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Eclipse-workplace\\SQA_StandardSelenium\\Thirdparty__Resource_Files\\Chrome Driver\\V118.exe");
+
 				
 				//define the web driver
 				WebDriver driver = new ChromeDriver();

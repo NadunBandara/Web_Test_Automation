@@ -12,7 +12,8 @@ public class WebElementAutomation {
 
 	public static void main(String[] args) {
 				//setting up thirdparty properties in the class file
-				System.setProperty("webdriver.chrome.driver", "D:\\Eclipse-workplace\\SQA_StandardSelenium\\Thirdparty__Resource_FIles\\Chrome Driver\\V117.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\Eclipse-workplace\\SQA_StandardSelenium\\Thirdparty__Resource_Flles\\Chrome Driver\\V117.exe");
+
 				
 				//define the web driver
 				WebDriver driver = new ChromeDriver();

@@ -21,17 +21,18 @@ public class NavigationWindow {
 		driver.get("file:///C:/Users/user/Downloads/Navigation%20Windows.html");
 		Thread.sleep(2000);
 		
-		//Identify webElements
+		//Identify webElements on 1st page
 		WebElement fname = driver.findElement(By.name("fname"));
 		fname.sendKeys("Nadun");
 		Thread.sleep(1000);
+		
 		WebElement lname = driver.findElement(By.name("lname"));
 		lname.sendKeys("Bandara");
 		Thread.sleep(1000);
+		
 		WebElement Option1radiobutton = driver.findElement(By.xpath("//*[@id=\"regForm\"]/div[1]/p[3]/input[1]"));
 		WebElement Option2radiobutton = driver.findElement(By.xpath("//*[@id=\"regForm\"]/div[1]/p[3]/input[2]"));
 		Thread.sleep(1000);
-		
 		String selectedOption = "Option1"; 
 
 		if ("Option1".equals(selectedOption)) {
@@ -42,31 +43,27 @@ public class NavigationWindow {
 		    Thread.sleep(1000);
 		}
 		
+		//click next btn
 		WebElement nextbtn = driver.findElement(By.id("nextBtn"));
 		nextbtn.click();
 		Thread.sleep(3000);
 		
-		String Expected_url = "file:///C:/Users/user/Downloads/Navigation%20Windows.html";
-		String Current_url = driver.getCurrentUrl();
+		//Identify web element on second page
+		WebElement email = driver.findElement(By.name("email"));
+		email.sendKeys("nadun@gmail.com");
+		Thread.sleep(1000);
 		
-		if(Expected_url.equals(Current_url)) {
-			System.out.println("Urls are match");
-			WebElement email = driver.findElement(By.name("email"));
-			email.sendKeys("nadun@gmail.com");
-			Thread.sleep(1000);
-			WebElement phone = driver.findElement(By.name("phone"));
-			phone.sendKeys("0715548963");
-			Thread.sleep(1000);
-			WebElement prevbtn = driver.findElement(By.id("prevBtn"));
-			prevbtn.click();
-			
-		}
-		else {
-			System.out.println("Urls are not match");
-
-		}
+		WebElement phone = driver.findElement(By.name("phone"));
+		phone.sendKeys("0715548963");
+		Thread.sleep(1000);
 		
+		//click previous btn
+		WebElement prevbtn = driver.findElement(By.id("prevBtn"));
+		prevbtn.click();
+		Thread.sleep(3000);
 		
+		//close the browser
+		driver.close();
 		
 	}
 
